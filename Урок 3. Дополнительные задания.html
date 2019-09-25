@@ -1,0 +1,124 @@
+﻿<!-- 
+    1. Сделать собственные примеры методов применяемых для массивов.
+
+    2. Создать программу, выполняющую вставку элемента в массив после элемента, значение которого укажет пользователь.
+
+
+    3. Создать многомерный массив, размер массива получить от пользователя. Каждый нечётный подмассив заполнить значением 'odd', а чётный - 'even'. Размер каждого вложенного массива - 3.
+    4. Создать два произвольных массива: один массив - любимая спортивная команда / модели автомобилей / города, во втором - количество игроков в команде / объем двигателя / количество жителей в городе. Объединить данные из двух массивов и вывести их в одну строку. 
+    concut and join
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+      
+</head>
+<body>
+<script>
+
+//  var alcohol = ["Rom", "Wisky", "Martini"];
+//  var food = ["chocolade", "nuts", "fruits"];
+
+//  document.write(alcohol);
+//  var changedArray = alcohol.join(" ");
+//  console.log(changedArray);
+
+
+// var coctail = alcohol.concat(food);
+// console.log(coctail);
+
+
+// var changedArray = alcohol.reverse();
+// console.log(changedArray);
+
+
+// var changedArray = alcohol.slice(2); 
+// console.log (changedArray);
+
+
+// var changedArray = alcohol.splice(1,2);
+// console.log("Удалены: " + changedArray);
+// console.log("Остались: " + alcohol);
+
+// alcohol.splice(1);
+// console.log("После вставки: " + alcohol);
+
+
+// var changedArray = alcohol.sort();
+// console.log(changedArray);
+
+
+// console.log("CocaCola :" + alcohol);
+// console.log("Размер массива: " + alcohol.length);
+
+// var newLength = alcohol.push("CocaCola");
+// console.log("После добавления: " + alcohol);
+// console.log("Размер массива: " + newLength);
+
+
+// var deletedElement = alcohol.pop();
+// console.log( deletedElement);
+
+
+// var newLength = alcohol.unshift("Vodka");
+// console.log("Массив после добавления Vodka: " + alcohol);
+// console.log("Размер нового массива: " + newLength + " и первый элемент - " + alcohol[0]);
+
+// var deleteValue = alcohol.shift();
+// console.log(deleteValue);
+
+//  Задание 3
+
+// var SomeNumber = +prompt('add number');
+// var array = [];
+// for(i=0; i<SomeNumber; i++){
+//     if (i % 2!=0){
+//     array.push(["odd", "odd", "odd"]);
+// } else {
+//     array.push (["even", "even", "even"]);
+// }
+// }
+// console.log(array)
+
+// Задание 2
+
+// var test = [1, 2, 3, 4, 5];
+// var number = +prompt('add some test word');
+// test.splice(number, 1, "hello world");
+// console.log(test)
+
+// Задание 4
+
+// var firstArray = ["любимая спортивная команда", "модели авто", "города"];
+// var secondArray = ["Зоря", "Mazda", "Lviv"];
+// var mix = firstArray.concat(secondArray);
+// console.log(mix)
+
+// или
+
+// var firstArray = ["любимая спортивная команда","модели авто","города"];
+// var secondArray =  ["Зоря", "Mazda", "Lviv"];
+
+// var list = [];
+// for (var j = 0; j < firstArray.length; j++) 
+//     list.push({'firstArray': firstArray[j], 'secondArray': secondArray[j]});
+
+// console.log(list)
+
+// или
+
+// var list = [];
+// for (var j = 0; j < firstArray.length; j++) 
+//     list.push(firstArray[j], secondArray[j]);
+
+// console.log(list)
+
+
+</script>
+
+
+
+</body>
+</html>
