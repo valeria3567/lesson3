@@ -1,0 +1,154 @@
+﻿<!-- 
+    1. Создать функцию calculate(operand1, operand2, sign), где operand1 и operand2 — два числа, sign — знак арифметической операции.
+       Функция должна расчитывать результат операции, исходя из переданного ей знака. 
+       Функция должна проверять корректность введенных чисел и знака операции.
+       Все аргументы для функции принять от пользователя.
+
+    2. Создать функцию, возводящую число в степень, число и сама степень вводится пользователем
+    
+    3.  Создать игру "Камень-Ножницы-Бумага".
+        Выбор компьютера определяется строкой:  
+        "var computerChoice = Math.random();
+        alert(computerChoice);".
+        Math.random() выдает произвольное число в промежутке от 0 до 1, на основании этого можно построить принцип выбора решения компьютера.
+
+    4. Напишите функцию, которая возвращает n-е число Фибоначчи. Для решения используйте цикл.
+
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+// Задание 1
+
+// function calculate(operand1, operand2, sign){
+//     var result;
+//             if (isNaN(operand1) || isNaN(operand2) )
+//             {
+//                 alert("One of arguments is not a number!");
+//                 return;
+//             }
+//     switch (sign) {
+//                 case "+" : {
+//                     result = operand1 + operand2;
+//                     break;
+//                 }
+//                 case "-" : {
+//                     result = operand1 - operand2;
+//                     break;
+//                 }
+//                 case "/" : {
+//                     result = operand1 / operand2;
+//                     break;
+//                 }
+//                 case "*" : {
+//                     result = operand1 * operand2;
+//                     break;
+//                 }
+//                 default: {
+//                     alert("Ошибка!");
+//                     return;
+//                 }
+//             }
+//             return result;
+// }    
+//     var operand1 = +prompt ("введите первое число");
+//     var operand2 = +prompt ("введите второе число");
+//     var sign = prompt ("введите знак");
+//     result = calculate(operand1, operand2, sign,);
+//     alert(result);
+            
+// Задание 2
+
+// var x = prompt ("введите число");
+// var n = prompt ("введите степень");
+
+// if (n < 1) {
+//   alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+// } else {
+
+// alert(Math.pow(x, n) );
+// }
+
+// Задание 3
+
+// var userChoice = prompt("Камень, ножницы, бумага");
+// var computerChoice = Math.random();
+// if (computerChoice < 0.34) {
+//     computerChoice = "камень";
+// } else if(computerChoice <= 0.67) {
+//     computerChoice = "бумага";
+// } else {
+//     computerChoice = "ножницы";
+// } alert("Компьютер: " + computerChoice);
+
+// var compare = function (choice1, choice2){
+
+// var a = "Ничья!";
+// var b = "камень выиграл";
+// var c = "бумага выиграла";
+// var d = "ножницы выиграли";
+
+// if(choice1 === choice2) {
+//     return a;
+// }
+
+// else if(choice1 === "камень") {
+
+// if(choice2 === "ножницы") {
+//     return b;
+// }
+// else {
+//     return c;
+//     }
+// }
+
+// else if(choice1 === "бумага") {
+//     if(choice2 === "камень") {
+//         return c;
+//     }
+// else {
+//     return d;
+//     }
+// }
+
+// else if(choice1 === "ножницы") {
+//     if(choice2 === "камень") {
+//         return b;
+// }
+//     else {
+//         return d;
+//     }
+//   }
+// }
+
+// compare(userChoice, computerChoice);
+// alert("итого: " + compare(userChoice, computerChoice));
+
+// Задание 4
+
+// function fib(n) {
+//   let a = 1;
+//   let b = 1;
+//   for (let i = 3; i <= n; i++) {
+//     let c = a + b;
+//     a = b;
+//     b = c;
+//   }
+//   return b;
+// }
+
+// alert( fib(3) ); 
+// alert( fib(10) ); 
+// alert( fib(20) ); 
+
+
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
